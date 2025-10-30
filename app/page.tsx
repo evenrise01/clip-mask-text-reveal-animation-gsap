@@ -1,65 +1,110 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      <nav>
+        <div className="col">
+          <div className="sub-col">
+            <span>Evenrise</span>
+          </div>
+          <div className="sub-col">
+            <span>Home</span>
+            <span>Projects</span>
+            <span>About</span>
+          </div>
+        </div>
+        <div className="col">
+          <span>Contact</span>
+        </div>
+      </nav>
+
+      <section className="hero">
+        <div className="hero-img">
+          <img src="/hero.jpg" alt="" />
+        </div>
+
+        <div className="header">
+          <h1>We craft identities and experiences for the bold.</h1>
+        </div>
+      </section>
+
+      <section className="about">
+        <span>Design and Strategy for the Vision-Driven</span>
+
+        <div className="header">
+          <h1>
+            We partner with founders, innovators, and change-makers to shape
+            brands that resonate. From first lines of code to global launches,
+            we bring focus, elegance and intent to every stage.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+        </div>
+      </section>
+
+      <section className="about-img">
+        <img src="/about.jpg" alt="" />
+      </section>
+
+      <section className="story">
+        <div className="col">
+          <h1>
+            The Story Behind <br />
+            Our Stillness
+          </h1>
+        </div>
+        <div className="col">
+          <p>
+            Evenrise was born from a simple idea: that creativity, when wielded
+            with intention, can quietly reshape the world. In an era of
+            overstimulation and fleeting trends, we chose a different path. One
+            of clarity, restraint, and long-form vision.
+          </p>
+
+          <p>
+            We began as a small collective of designers, developers, and
+            strategists who shared an obsession with thoughtful execution. No
+            shortcuts, no templates. Just the hard, honest work of listening
+            deeply, thinking critically, and building beautifully. Over time,
+            our work began to attract the kind of clients we had always hoped
+            for. Visionary founders, principled organizations, and global teams
+            with sharp ideas and quiet confidence.
+          </p>
+
+          <p>
+            We don’t chase virality. We don’t trade in noise. We build for the
+            long haul: timeless identities, seamless digital experiences, and
+            strategies that evolve with clarity and purpose. Greyloom exists for
+            those who believe that the most enduring ideas don’t demand
+            attention. They earn it.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="philosophy">
+        <span>The Thought Beneath</span>
+
+        <div className="header">
+          <h1>
+            We believe in the power of quiet conviction. In work that speaks softly but lingers long. In design as a tool for clarity, not decoration. We believe that the best ideas don&apos;t demand attention. Our philosophy is simple. Create with intent.
+          </h1>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <footer>
+        <div className="col">
+          <div className="sub-col">
+            <span>Terms and Conditions</span>
+          </div>
+          <div className="sub-col">
+            <h1>Twitter</h1>
+            <h1>Github</h1>
+            <h1>LinkedIn</h1>
+            <h1>Awwwards</h1>
+            <h1>Instagram</h1>
+          </div>
+        </div>
+        <div className="col">
+          <span>Copyright Evenrise 2025</span>
+        </div>
+      </footer>
+    </>
   );
 }
