@@ -19,8 +19,161 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  line-height: 1;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin-bottom: 1em;
+}
+
+span {
+  color: #ffffffc2;
+  display: block;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+}
+
+nav .col:nth-child(1) {
+  display: flex;
+}
+
+nav .col:nth-child(2) {
+  text-align: right;
+}
+
+nav span {
+  color: #909090;
+  mix-blend-mode: difference;
+}
+
+.col,
+.sub-col {
+  flex: 1;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 2em;
+}
+
+.hero,
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero .header {
+  width: 50%;
+  text-align: center;
+}
+
+.hero .header h1 {
+  color: #ffffffc2;
+}
+
+.about-img {
+  height: max-content;
+  padding: 8em 2em;
+}
+
+.about-img img {
+  width: 20%;
+  aspect-ratio: 4/5;
+}
+
+.about,
+.philosophy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.philosophy {
+  background-color: #202020;
+}
+
+.philosophy h1,
+.philosophy span {
+  color: #fff;
+}
+
+.about h1,
+.philosophy h1 {
+  text-indent: 25%;
+}
+
+.story {
+  height: max-content;
+  display: flex;
+  gap: 1em;
+  margin-bottom: 8em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1em;
+  padding: 6em 2em 1.5em 2em;
+}
+
+footer .col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .sub-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+.line {
+  transform: translateY(100%);
+  will-change: transform;
 }
